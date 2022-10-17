@@ -1,0 +1,28 @@
+<p>login works!</p>
+<!-- <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="goToProduct()">Submit</button>
+  </form> -->
+
+  <form>  
+    <div class="container">   
+        <label>Username : </label>   
+        <input type="text" placeholder="Enter Username" name="username" required #username>  <br><br>
+        <label>Password : </label>   
+        <input type="password" placeholder="Enter Password" name="password" required #pass> <br> <br>
+        <button (click)="login(username.value, pass.value)" class="btn btn-primary" style="margin-left: 150px;">Login</button> 
+        <span>{{msg}}</span>  
+      </div>
+    </form>
